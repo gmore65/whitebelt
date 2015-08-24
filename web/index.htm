@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>White belt coder - Jiu Jitsu Journey</title>
+		<meta name="description" content="A blog written on my journey both in jiu jitsu and coding."/> <!--These are used for search engine purposes-->
+		
+		<link href="..\web\styles.css" type="text/css" rel="stylesheet" media="all">
+		<style>
+			#map-canvas {
+				width: 500px;
+				height: 400px;
+				
+			}
+		</style> <!--using css within the html file-->
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
+		<script>
+			function initialize() {
+				var mapCanvas = document.getElementById('map-canvas');
+				var mapOptions = {
+					center: new google.maps.LatLng(32.821229, -117.154503),
+					zoom: 15,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+					}
+				var map = new google.maps.Map(mapCanvas, mapOptions)
+				}
+				google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+		<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/
+		trunk/html5.js"></script>
+		<![endif]-->
+		</head>
+
+	<body>
+	<div class="wrapper">
+		<div class="title">
+		<form>
+		Search:
+		<input type="search" name="search" placeholder="Enter Keyword" />
+		<input type="submit" value="Search" id="shadowbox" />
+	
+		<span class="alignRight">
+	
+		Username:<input type="text" name="username" maxlength="10" required="required" />	
+		<p>Password:<input type="password" name="password" maxlength=10 required="required" /> <!--the require value ensure that the user inputs value in the textbox before submit. HTML VALIDATION. This is a html5 feature.  You can use javascript too if needed-->
+		</p>
+		<p>
+		<input type="submit" value="Submit" />
+		</p>
+		</span>
+		</form>	
+	
+		<h4 align = "center" id="top"><img src="../web/White_belt3.PNG"></h4>
+		<h1 align = "center" class="shadow">White Belt <span class="white"> C</span><span class"blue">o</span><span class="purple">d</span><span class="brown">e</span><span class="black"><sub>r&copy</sub></span> </h1>
+		</div>
+		<div class="background">
+		<blockquote cite="http://www.bruceleequotes.org/" id="bruce_lee_quote" class="zeromargin">
+		<p align="center" > <br \>“Adapt what is useful, reject what is useless, and add what is specifically your own.”
+		– Bruce Lee </p>
+		</blockquote>
+		<p>Just a computer geek wanting to talk about his journey in jiu jitsu.  I created this blog just to help in my growth in the art, but also the assist the people just starting out in the jiu jitsu, through my own mistakes and experience. I’m technically  not a white belt anymore but I truly believe we are still white belts even though our belt colors change.  I’m still learning the ins and outs of it.  There is a vast amount to learn and it’s nearly impossible to learn everything.  I believe that’s the fun part of jiu jitsu.  Reading this hopefully this help you out too.
+		</p>
+		<p><abbr title="Knee, Ankle, Toe, Compression locks, Heal Hooks">KATCH</abbr>
+		<!-- use for abbreviation and acronym to show as a popup -->
+		
+		</p>
+		<hr />
+		<h3 align = "center">Perspective</h1>
+		<p>What I found in jiu jitsu is the different perspective of each person and belt levels.  Myself even what I use to think when I first started out is different from what I see now. A person that is a black belt his perspective is different from when he was a brown belt.  It’s interesting to see how we evolve in our journey.  What I learned on the first day of class, I would go back to and refine that skill and think to myself, “Why didn’t I see that before.”  Simple hip escape for example has so much detail in how it being use.  We think to ourselves “it just moving your hips,” but it’s not just that. Do you exaggerate the  hip movement? Do you hip out inch by inch?  Ask a blue belt about it and it would be different from what  a black belt would say about it. I think that’s the most important thing is always asking questions.
+		</p>
+		<hr />
+		<h3 align="center">Knowledge</h1>
+		<p>Everytime I train on the mats, there is always something I learn or refine.  Imagine yourself in a cave.  When you first walk in you can’t see anything except for darkness. This is how I felt on my first day of Jiu Jitsu.  I didn’t know anything.  Now imagine if you had a candle in the cave.  The brighter the flame the more we realize how big this cave is. I see the flame as the knowledge we gain throughout our journey. Each technique, escape, submission that I learn represents the illumination of the candle, but we realize how much more there is to learn.  
+		</p>
+		<p>
+		<del>hello world</del><ins> hello jiu jitsu</ins> <!-- testing the ins and del elements-->
+		</p>
+		<p>
+		<hr />
+		<figure>
+		<img src="../web/graph1.jpg" alt="Percentage of submissions from different positions graph">
+		<br />
+		<figcaption>Percentage of submissions from different positions</figcation> <!-- figures images and captions-->
+		</figure>
+		<form>
+		<p>What is your favorite position:
+		<br />
+		<input type="radio" name="positions" value="side control" checked="checked" />Side control
+		<br />
+		<input type="radio" name="positions" value="mount" />Mount
+		<br />
+		<input type="radio" name="positions" value="back" />Back
+		</p>
+		<hr />
+		<p align="center">Comments</p>
+		<p align="center"> <!--you can a server address to the form action to store the comments-->
+		<textarea name="comments" cols="20 rows="4">enter your comments...</textarea>
+		</p>
+	
+		<br />
+	
+		<p>What is your favorite submission</p>
+		<select name="submissions">
+		<option value="armbar">Armbar</option>
+		<option value="rnc">RNC</option>
+		<option value="kimura">Kimura</option>
+		</select>
+	
+		<p>Subscribe to our email newsletter:</p>
+		<input type="text" name="email" />
+		<input type="submit" name="subscribe" value="Subscribe" />
+	
+		<br />
+	
+		<button> Add </button> <!--adding a button-->
+	
+
+	
+		<br />
+		What belt are you <!--using labels on forms -->
+		<input id="white" type="radio" name="belt" value="w">
+		<label for="white">White</label>
+		<input id="blue" type="radio" name="belt" value="blu">
+		<label for="blue">blue</label>
+		<input id="purple" type="radio" name="belt" value="purp">
+		<label for="purple">purple</label>
+		<input id="brown" type="radio" name="belt" value="bwn">
+		<label for="brown">brown</label>
+		<input id="black" type="radio" name="belt" value="blk">
+		<label for="black">black</label>
+		</form>
+		<p><a href="#bruce_lee_quote">Bruce lee quote</a></p><!-- this is to page up to a certain point on the page using id tag-->
+		<p><a href="#top">Top</a></p>
+		<p align="right">
+		<iframe
+		width="150"
+		height="150"
+		src="https://www.google.com/maps/@38.997934,-105.550567,7z?hl=en&amp;wmode=transparent">
+		</iframe>
+		<div id="map-canvas"></div>
+		<video src="..\..\web-2015-07-21\web\puppy.mp4"
+		poster="..\..\web-2015-07-21\web\minions.jpg"
+		width="400" height="300"
+		preload
+		controls
+		loop>
+		<p>this is not supported by the browser</p>
+		</video>  <!--mp4 feature is currently working on chrome-->
+		<hr />
+		<form>
+		<input class="inputstyle" type="text" id="email" />
+		<input type="text" id="twitter" />
+		<input type="text" id="web" />
+		<hr />
+		<footer>
+		<ul class="center">
+		<li class="inline"><a href="../web/weblinks/links.htm"Home</li>
+		<li class="inline">Links</li>
+		<li class="inline">About</li>
+		<li class="inline">Contact</li>
+		</ul>
+		</footer>
+		</div>
+	</div>
+	</body>
+
+</html>

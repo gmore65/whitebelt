@@ -1,0 +1,119 @@
+body{ 
+	margin: 0px 0px 0px 0px;
+	background-image: url("../web/windows.jpg");
+	
+	}
+
+form.width{
+	width: 300px;
+	}
+
+	
+h1{
+	color:#6495ED;
+	font-family: 'Indie Flower', cursive;
+	font-size: 300%;
+
+	}
+
+.zeromargin{
+		margin: -40px 0px 0px 0px;
+	}
+
+cn{
+	text-align: center;
+	}
+
+p{font-family: Verdana, Arial, "Courier New";
+}/*2 word fonts needs to be wrapped in quotes*/
+
+
+.title {background-color: #395ECC;
+	color: #ffffff
+
+}
+
+.alignRight {
+	text-align: right;
+	width: 300px;
+	margin-left: 700px;
+	margin-top: -21px;
+	position: relative}
+
+.background {background-image: url("../web/bamboo.jpg");
+}
+
+.wrapper {
+	width: 1000px;
+	margin: 0px auto;}
+
+.shadow {
+	text-shadow: -1px 5px 0px #666666;}/*text shadow*/
+
+input#shadowbox{
+	border-radius: 5px
+	} 
+
+a:link{
+	color: deepblue;
+	text-decoration: none;}
+
+a:visited{
+	color: black}
+
+a:hover {
+	color: deeppink;
+	text-decoration: underline;}
+
+a:active {
+	color:green;}
+
+input:focus{
+	background: pink;}
+
+p {
+	margin: 0px 50px 0px 50px ;
+	}
+
+a{
+	cursor: auto;
+}
+
+.inline{
+	
+	display: inline;
+margin: 0 50px;
+	
+	}
+
+.center{
+	text-align: center;
+
+	
+	
+	}
+
+.inputstyle {
+	background-color:;
+	border: 1px solid #bdbdbd;
+	border-radius: 5px;
+	padding: 5px 5px 5px 30px;}
+
+/** { background: rgba(1, 1, 1, 0.1); }*//*use this command to see layout of element by using background color*/
+
+
+footer{
+	background-color: gray;
+	color: white;
+	}
+header, section, footer, aside, nav, article, figure
+{
+display: block;}
+
+/* color */
+
+.white {color: white;}
+.blue {color: blue;}
+.purple {color: purple;}
+.brown {color: #994c00;}
+.black {color: black;}
