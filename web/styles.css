@@ -28,7 +28,8 @@ p{font-family: Verdana, Arial, "Courier New";
 }/*2 word fonts needs to be wrapped in quotes*/
 
 
-.title {background-color: #395ECC;
+.title {background-image: url("../web/blue_background.jpg");
+	/*background-color: #395ECC;*/
 	color: #ffffff
 
 }
