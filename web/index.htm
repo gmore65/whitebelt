@@ -3,7 +3,9 @@
 	<head>
 		<title>White belt coder - Jiu Jitsu Journey</title>
 		<meta name="description" content="A blog written on my journey both in jiu jitsu and coding."/> <!--These are used for search engine purposes-->
-		
+		<link href="960\960.css" rel="stylesheet" />
+		<link href="960\reset.css" rel="stylesheet" />
+		<link href="960\text.css" rel="stylesheet" />
 		<link href="..\web\styles.css" type="text/css" rel="stylesheet" media="all">
 		<style>
 			#map-canvas {
@@ -33,28 +35,39 @@
 		</head>
 
 	<body>
-	<div class="wrapper">
+		<div class="container_12">
+		<nav> hello 
+		</nav>
 		<div class="title">
 		<form>
-		Search:
-		<input type="search" name="search" placeholder="Enter Keyword" />
-		<input type="submit" value="Search" id="shadowbox" />
-	
-		<span class="alignRight">
-	
-		Username:<input type="text" name="username" maxlength="10" required="required" />	
-		<p>Password:<input type="password" name="password" maxlength=10 required="required" /> <!--the require value ensure that the user inputs value in the textbox before submit. HTML VALIDATION. This is a html5 feature.  You can use javascript too if needed-->
-		</p>
-		<p>
-		<input type="submit" value="Submit" />
-		</p>
-		</span>
+			<div class="grid_4">
+			Search:
+			<input type="search" name="search" placeholder="Enter Keyword" />
+			<input type="submit" value="Search" id="shadowbox" />
+			</div>
+			<div class="grid_4">
+			<br />
+			</div>
+			
+			<div class="grid_4 right">	
+				Username:<input type="text" name="username" maxlength="10" required="required" />
+			<br />	
+				Password:<input type="password" name="password" maxlength=10 required="required" /> <!--the require value ensure that the user inputs value in the textbox before submit. HTML VALIDATION. This is a html5 feature.  You can use javascript too if needed-->
+				<br />
+				
+				<input type="submit" value="Submit" />
+				
+			</div>
+			
+			
+		
+		
 		</form>	
-	
 		<h4 align = "center" id="top"><img src="../web/White_belt3.PNG"></h4>
-		<h1 align = "center" class="shadow">White Belt <span class="white"> C</span><span class"blue">o</span><span class="purple">d</span><span class="brown">e</span><span class="black"><sub>r&copy</sub></span> </h1>
+		<h1 align = "center" class="shadow"><span class="white">White</span> <span class"blue">B</span><span class="purple">e</span><span class="brown">l</span><span class="black">t</span>  Code<sub>r&copy</sub> </h1>
 		</div>
 		<div class="background">
+		
 		<blockquote cite="http://www.bruceleequotes.org/" id="bruce_lee_quote" class="zeromargin">
 		<p align="center" > <br \>“Adapt what is useful, reject what is useless, and add what is specifically your own.”
 		– Bruce Lee </p>
@@ -161,7 +174,7 @@
 		<li class="inline">Contact</li>
 		</ul>
 		</footer>
-		</div>
+	
 	</div>
 	</body>
 

@@ -1,7 +1,7 @@
 body{ 
 	margin: 0px 0px 0px 0px;
-	background-image: url("../web/windows.jpg");
-	
+	background: url("../web/images/Blurred-Background1.jpg") no-repeat center; /*background shorthand.  background: color image repeat attachment position (cut down lines of code)*/
+	background-size: 5000px 5000px;	
 	}
 
 form.width{
@@ -28,7 +28,7 @@ p{font-family: Verdana, Arial, "Courier New";
 }/*2 word fonts needs to be wrapped in quotes*/
 
 
-.title {background-image: url("../web/blue_background.jpg");
+.title {background-image: url("../web/images/blue_background.jpg");
 	/*background-color: #395ECC;*/
 	color: #ffffff
 
@@ -40,8 +40,9 @@ p{font-family: Verdana, Arial, "Courier New";
 	margin-left: 700px;
 	margin-top: -21px;
 	position: relative}
+.right{text-align: right;}
 
-.background {background-image: url("../web/bamboo.jpg");
+.background {background-image: url("../web/images/bamboo.jpg");
 }
 
 .wrapper {
